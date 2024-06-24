@@ -120,3 +120,51 @@ html {
   50% { background-color: #3a3;}
   100% { background-color: #6a6a6a;}
 }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: transparent; /* Set background to transparent */
+  margin: 0;
+  padding: 0;
+}
+
+.animation-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  opacity: 0; /* Initially hidden */
+  animation: fadeIn 1s forwards; /* Fade in animation */
+}
+
+.animation-container.fade-out {
+  animation: fadeOut 1s forwards; /* Fade out animation */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Adjust animation speed */
+.lightning {
+  animation-duration: 0.75s; /* Double the original speed */
+}
+
+.shape {
+  animation-duration: 0.5s; /* Double the original speed */
+}
