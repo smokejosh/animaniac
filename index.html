@@ -8,21 +8,57 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheet1.css">
-  </head>
-  <body>
-    <div class="logo-holder">
-      <div class="bg"></div>
-      <div class="bar"></div>
-      <div class="bar fill1"></div>
-      <div class="bar fill2"></div>
-      <div class="bar fill3"></div>
-      <div class="bar fill4"></div>
-      <div class="bar fill1"></div>
-      <div class="bar fill5"></div>
-      <div class="bar fill6"></div>
-      <div class="bar"></div>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: transparent;
+    }
+    .animation-container {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+    }
+  </style>
+</head>
+<body>
+  <div class="animation-container">
+    <h1 id="headline">Strategic Planning & Reporting</h1>
+    <div class="animation-content">
+      <!-- Your existing animation HTML here -->
+      <div class="animation-container">
+        <div class="lightning-container">
+          <div class="lightning white"></div>
+          <div class="lightning red"></div>
+        </div>
+        <div class="boom-container">
+          <div class="shape circle big white"></div>
+          <div class="shape circle white"></div>
+          <div class="shape triangle big yellow"></div>
+          <div class="shape disc white"></div>
+          <div class="shape triangle blue"></div>
+        </div>
+        <div class="boom-container second">
+          <div class="shape circle big white"></div>
+          <div class="shape circle white"></div>
+          <div class="shape disc white"></div>
+          <div class="shape triangle blue"></div>
+        </div>
+      </div>
     </div>
-  </body>
+  </div>
+  
+  <script>
+    setTimeout(function() {
+      document.getElementById('headline').style.opacity = 1;
+      document.querySelector('.animation-container').classList.add('fade-out');
+    }, 2000); // Adjust timing as needed
+  </script>
+</body>
 </html>
 
 
