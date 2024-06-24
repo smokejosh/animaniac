@@ -11,8 +11,8 @@ body {
 .animation-container {
   display: block;
   position: relative;
-  width: 800px;
-  max-width: 100%;
+  width: 80%;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -57,8 +57,7 @@ body {
   text-align: center;
   align-items: center;
   transform: translateY(-50%);
-  left: 200px;
-  top: -145px;
+  left: 25%;
 }
 
 .shape {
@@ -138,8 +137,8 @@ body {
 }
 
 .boom-container.second {
-  left: 485px;
-  top: 155px;
+  left: 60%;
+  top: 70%;
 }
 
 .boom-container.second .shape.triangle,
@@ -246,7 +245,7 @@ body {
 .fade-in-text {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 8vw; /* Responsive font size */
   color: white;
   opacity: 0;
   animation: fadeIn 2s ease-in-out 2s forwards;
@@ -263,5 +262,49 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .boom-container, .boom-container.second {
+    width: 60px;
+    height: 60px;
+  }
+
+  .shape.circle {
+    width: 15px;
+    height: 15px;
+    margin-left: -20px;
+  }
+
+  .shape.circle.big {
+    width: 30px;
+    height: 30px;
+  }
+
+  .fade-in-text {
+    font-size: 10vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .boom-container, .boom-container.second {
+    width: 40px;
+    height: 40px;
+  }
+
+  .shape.circle {
+    width: 10px;
+    height: 10px;
+    margin-left: -15px;
+  }
+
+  .shape.circle.big {
+    width: 20px;
+    height: 20px;
+  }
+
+  .fade-in-text {
+    font-size: 12vw;
   }
 }
