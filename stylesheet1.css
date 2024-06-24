@@ -2,7 +2,7 @@ body {
     display: flex;
     align-items: center;
     position: relative;
-    background: linear-gradient(to bottom right, #070630 0%,#060454 100%);
+    background: transparent;
     min-height: 100vh;
   }
   
